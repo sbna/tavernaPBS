@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/asm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/batik-awt-util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/commons-math-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/FileTools.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/ganymed-ssh2-build250.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/gnujaxp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/informa.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/iText-2.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jcommon-1.0.16-junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jcommon-xml-1.0.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-action.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-beaninfo.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-charts.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-common.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-components.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-dashboard.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-data.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-designer.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-dialogs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-diff.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-dock.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-editor.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-gantt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-grids.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-pivot.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-properties.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-rss.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-shortcut.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jide-synthetica.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/jta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/lucene-core-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/poi-3.5-FINAL-20090928.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/poi-ooxml-3.5-FINAL-20090928.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/swtgraphics2d.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Paul/Documents/CPHG/Taverna Work/Monitor/bin/lib/xerces.jar"/>
+	<classpathentry kind="output" path="bin1"/>
+</classpath>

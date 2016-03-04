@@ -1,0 +1,124 @@
+#!/usr/bin/perl
+
+use strict;
+
+# This script will kill all user jobs submitted to the queue OR a set of jobs
+# listed in a log file
+
+if (@ARGV > 1) {
+	print "killjobs [<taverna_log>]\n";
+	exit;
+}
+
+my $user_id = (getpwuid($<))[0];
+
+my $logFile = shift @ARGV;
+
+if ($logFile) {
+	
+	open LOG, "$logFile"
+		or die "Cannot open $logFile";
+
+	my @outputs;
+	my $jobID;
+		
+	while (<LOG>) {
+
+		if (index($_, "Output: ") != -1) {
+			my $output = substr($_, 8);
+			chomp($output);
+	
+			push(@outputs, $output);
+		}
+		
+		if (index($_, "PBS ID: ") != -1) {
+			my $jobID = substr($_, 8);
+			chomp($jobID);
+			
+			# if job was skipped, empty outputs
+			if ($jobID eq "N/A") {				
+				undef(@outputs);
+				next;
+			}
+			
+			print "Attempting to kill job ID $jobID ...\n";
+			
+			my $exitVal = system "qdel -W force $jobID &> /dev/null";
+			
+			# if job was deleted, attempt to remove all possible outputs
+			if ($exitVal == 0) {
+				print "Job killed\n";
+				
+				foreach my $output (@outputs) {
+					if ($output ne "") {
+						print "Removing output $output\n";
+						system "rm -rf $output";
+					}
+				}
+				
+				undef(@outputs);
+			}
+			# else just empty outputs
+			else {
+				print "Job was already completed\n";
+				undef(@outputs);
+				next;
+			}
+		}
+		
+	}
+	# find and remove the "wait job"
+	
+	my $waitJob = "WAIT" . substr($logFile, 0, 6);
+	
+	my @qLines = `qstat -u $user_id | grep $waitJob`;
+	
+	my @fields = split(/\s+/, $qLines[0]);
+	
+	my $jobID = $fields[0];
+	
+	if ($jobID ne "") {
+		my $exitVal = system "qdel -W force $jobID &> /dev/null";
+	}
+}
+else {
+	print "Do you really want to delete all your jobs from PBS? (Y/N)\n";
+	
+	my $response = <STDIN>;
+	chomp($response);
+	
+	if (($response ne "Y") && ($response ne "y")) {
+		print "Nevermind then\n";
+		exit;
+	}
+	
+	my @affirmatives = ("Sir, yes sir!",
+			    "Thy will be done.",
+			    "Making it so ...",
+			    "As you wish.",
+			   );
+	print @affirmatives[rand(@affirmatives)], "\n";
+	
+	my @qLines = `qstat -u $user_id | grep $user_id`;
+
+	chomp(@qLines);
+
+	foreach my $line (@qLines) {
+	
+		my @fields = split (/\./, $line);
+	
+		my $jobID = "$fields[0]\.$fields[1]";
+		
+		print "Attempting to kill job ID $jobID ...\n";
+		
+		my $exitVal = system "qdel -W force $jobID &> /dev/null";
+		
+		if ($exitVal == 0) {
+			print "Job killed\n";
+		}
+		else {
+			print "Job was already completed\n";
+		}
+	
+	}
+}

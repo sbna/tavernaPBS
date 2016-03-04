@@ -1,0 +1,57 @@
+Job Id: 178180.lc4
+    Job_Name = J177217263
+    Job_Owner = mjl3p@lc4.local
+    resources_used.cpupercent = 186
+    resources_used.cput = 01:43:45
+    resources_used.mem = 8299900kb
+    resources_used.ncpus = 2
+    resources_used.vmem = 9149892kb
+    resources_used.walltime = 01:13:42
+    job_state = R
+    queue = cphg
+    server = lc4
+    Checkpoint = u
+    ctime = Wed Jun  9 09:45:08 2010
+    depend = afterok:178178.lc4@lc4.local,beforeok:178181.lc4@lc4.local
+    Error_Path = lc4.itc.virginia.edu:/h1/m/mj/mjl3p/.taverna-2.1.2/logs/J17721
+	7263.err
+    exec_host = lc4-compute-0-13/0*2
+    exec_vnode = (lc4-compute-0-13:mem=8388608kb:ncpus=2)
+    group_list = CPHG
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    mtime = Wed Jun  9 10:23:24 2010
+    Output_Path = lc4.itc.virginia.edu:/h1/m/mj/mjl3p/.taverna-2.1.2/logs/J1772
+	17263.out
+    Priority = 0
+    qtime = Wed Jun  9 09:45:08 2010
+    Rerunable = True
+    Resource_List.mem = 8gb
+    Resource_List.ncpus = 2
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.Qlist = cphg
+    Resource_List.select = 1:mem=8GB:ncpus=2
+    stime = Wed Jun  9 10:23:24 2010
+    session_id = 22689
+    jobdir = /home/mjl3p
+    Variable_List = PBS_O_HOME=/home/mjl3p,PBS_O_LOGNAME=mjl3p,
+	PBS_O_PATH=/home/mjl3p/bin:/uva/bin:/usr/lib64/qt-3.3/bin:/usr/pbs/bin
+	:/usr/local/bin:/bin:/usr/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/r
+	ocks/bin:/opt/rocks/sbin:.,PBS_O_MAIL=/var/mail/mjl3p,
+	PBS_O_SHELL=/bin/bash,PBS_O_HOST=lc4.itc.virginia.edu,
+	PBS_O_WORKDIR=/h1/m/mj/mjl3p,PBS_O_SYSTEM=Linux,SHELL=/bin/bash,
+	SSH_CLIENT=128.143.108.189 61688 22,USER=mjl3p,MAIL=/var/mail/mjl3p,
+	PATH=/home/mjl3p/bin:/uva/bin:/usr/lib64/qt-3.3/bin:/usr/pbs/bin:/usr/
+	local/bin:/bin:/usr/bin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/b
+	in:/opt/rocks/sbin:.,PWD=/h1/m/mj/mjl3p,SHLVL=1,HOME=/home/mjl3p,
+	LOGNAME=mjl3p,SSH_CONNECTION=128.143.108.189 61688 128.143.22.63 22,
+	_=/usr/pbs/bin/qsub,PBS_O_QUEUE=cphg
+    comment = Job run at Wed Jun 09 at 10:23 on (lc4-compute-0-13:mem=8388608kb
+	:ncpus=2)
+    etime = Wed Jun  9 10:23:24 2010
+    umask = 33
+    pset = switch=lc4
+

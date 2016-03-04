@@ -1,0 +1,140 @@
+#################################################
+WorkflowRun: 1278093424868
+User: mjl3p
+-------------------------------------------------
+Job Name: J138445855
+WorkflowNode: WorkNode1
+Command: echo input1 in node1
+Command: sleep 15
+PBS ID: 187852.lc4
+@
+Job Name: J-18556988
+WorkflowNode: WorkNode1
+Command: echo input3 in node1
+Command: sleep 15
+PBS ID: 187853.lc4
+@
+Job Name: J-16690086
+WorkflowNode: WorkNode2
+Command: echo input1 in node2
+Command: sleep 15
+Parent ID: 187852
+PBS ID: 187854.lc4
+@
+Job Name: J-85862649
+WorkflowNode: WorkNode1
+Command: echo input2 in node1
+Command: sleep 15
+PBS ID: 187855.lc4
+@
+Job Name: J818504225
+WorkflowNode: WorkNode3
+Command: echo input1 in node3
+Command: sleep 15
+Parent ID: 187854
+PBS ID: 187856.lc4
+@
+Job Name: J631813982
+WorkflowNode: WorkNode2
+Command: echo input3 in node2
+Command: sleep 15
+Parent ID: 187853
+PBS ID: 187857.lc4
+@
+Job Name: J-11756404
+WorkflowNode: WorkNode3
+Command: echo input3 in node3
+Command: sleep 15
+Parent ID: 187857
+PBS ID: 187858.lc4
+@
+Job Name: J162888633
+WorkflowNode: WorkNode2
+Command: echo input2 in node2
+Command: sleep 15
+Parent ID: 187855
+PBS ID: 187859.lc4
+@
+Job Name: J-17856812
+WorkflowNode: WorkNode3
+Command: echo input2 in node3
+Command: sleep 15
+Parent ID: 187859
+PBS ID: 187860.lc4
+@
+#################################################
+WorkflowRun: 1278093468099
+User: mjl3p
+-------------------------------------------------
+Job Name: J138445855
+WorkflowNode: WorkNode1
+Command: echo input1 in node1
+Command: sleep 15
+PBS ID: 187852
+@
+Job Name: J-85862649
+WorkflowNode: WorkNode1
+Command: echo input2 in node1
+Command: sleep 15
+PBS ID: 187855
+@
+Job Name: J-16690086
+WorkflowNode: WorkNode2
+Command: echo input1 in node2
+Command: sleep 15
+Parent ID: 187852
+PBS ID: 187854
+@
+Job Name: J162888633
+WorkflowNode: WorkNode2
+Command: echo input2 in node2
+Command: sleep 15
+Parent ID: 187855
+PBS ID: 187859
+@
+Job Name: J818504225
+WorkflowNode: WorkNode3
+Command: echo input1 in node3
+Command: sleep 15
+Parent ID: 187854
+PBS ID: 187856
+@
+Job Name: J-18556988
+WorkflowNode: WorkNode1
+Command: echo input3 in node1
+Command: sleep 15
+PBS ID: 187853
+@
+Job Name: J631813982
+WorkflowNode: WorkNode2
+Command: echo input3 in node2
+Command: sleep 15
+Parent ID: 187853
+PBS ID: 187857
+@
+Job Name: J-17856812
+WorkflowNode: WorkNode3
+Command: echo input2 in node3
+Command: sleep 15
+Parent ID: 187859
+PBS ID: 187860
+@
+Job Name: J-11756404
+WorkflowNode: WorkNode3
+Command: echo input3 in node3
+Command: sleep 15
+Parent ID: 187857
+PBS ID: 187858
+@
+
+$$
+J138445855, 187852.lc4, WorkNode1, mjl3p, null, 1278093314000, 1278093390000, 1278093468000, 78000, 1.0, 0
+J-18556988, 187853.lc4, WorkNode1, mjl3p, null, 1278093318000, 1278093390000, 1278093468000, 78000, 1.0, 0
+J-16690086, 187854.lc4, WorkNode2, mjl3p, [187852.lc4], 1278093318000, 1278093552000, 1278093631000, 79000, 1.0, 0
+J-85862649, 187855.lc4, WorkNode1, mjl3p, null, 1278093322000, 1278093391000, 1278093468000, 77000, 1.0, 0
+J818504225, 187856.lc4, WorkNode3, mjl3p, [187854.lc4], 1278093323000, 1278093716000, 1278093790000, 74000, 1.0, 0
+J631813982, 187857.lc4, WorkNode2, mjl3p, [187853.lc4], 1278093323000, 1278093553000, 1278093631000, 78000, 1.0, 0
+J-11756404, 187858.lc4, WorkNode3, mjl3p, [187857.lc4], 1278093327000, 1278093716000, 1278093793000, 77000, 1.0, 0
+J162888633, 187859.lc4, WorkNode2, mjl3p, [187855.lc4], 1278093327000, 1278093553000, 1278093631000, 78000, 1.0, 0
+J-17856812, 187860.lc4, WorkNode3, mjl3p, [187859.lc4], 1278093331000, 1278093716000, 1278093793000, 77000, 1.0, 0
+$$

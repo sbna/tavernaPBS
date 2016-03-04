@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/Paul/Documents/CPHG/Monitor.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Monitor/src/Monitor.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=Monitor/src&lt;viewerV1{InputFile.java[InputFile" manifestLocation="/Monitor/manifest.mf" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/Monitor/.classpath"/>
+        <javaElement handleIdentifier="=Monitor/src"/>
+        <file path="/Monitor/LogFileEx1.txt"/>
+        <file path="/Monitor/.project"/>
+        <file path="/Monitor/qstatfEx1.txt"/>
+        <file path="/Monitor/Help.html"/>
+        <file path="/Monitor/manifest.mf"/>
+        <file path="/Monitor/Monitor.jardesc"/>
+        <file path="/Monitor/LogFileEx3.txt"/>
+        <folder path="/Monitor/lib"/>
+    </selectedElements>
+</jardesc>

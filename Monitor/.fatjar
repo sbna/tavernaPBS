@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Wed Aug 18 14:02:08 EDT 2010
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Monitor_fat.jar
+manifest.mergeall=true
+manifest.mainclass=viewerV1.InputFile
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
