@@ -37,6 +37,7 @@ public class PBS implements Serializable{
 	private int defaultWallTime;	
 	private String defaultDestination;
 	private String defaultGroup;	
+	private String defaultAccountName;
 	//private String defaultQsubFlag; // replaced with array
 	private String defaultPath;		// variable to allow user to specify a PATH, can be added to or just replaced
 									// setPath or add2Path
@@ -1033,6 +1034,15 @@ public class PBS implements Serializable{
 		// change this to 002?
 		script.append("#PBS -W umask=33\n");
 		
+		// set account name
+		String accountName = job.getAccountName();
+		if (accountName == null) {
+			accountName = this.defaultAccountName;
+		}
+		if (accountName != null) {
+			script.append("#PBS -A " + accountName + "\n");
+		}
+		
 		
 		return script;
 	}
@@ -1559,6 +1569,14 @@ public class PBS implements Serializable{
 
 	public String getGroup() {
 		return defaultGroup;
+	}
+	
+	public void setAccountName(String defaultAccountName) {
+		this.defaultAccountName = defaultAccountName;
+	}
+
+	public String getAccountName() {
+		return defaultAccountName;
 	}
 	
 	public void addQsubFlag(String qsubFlag) {

@@ -17,6 +17,7 @@ public class Job {
 	private int wallTime;
 	private String destination;
 	private String group;
+	private String accountName;
 	private String path;
 //	private String qsubFlag;		// additional data to be added to submission script // replaced
 	private Vector<String> qsubFlags;
@@ -151,6 +152,12 @@ public class Job {
 	}
 	public String getGroup() {
 		return group;
+	}
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
+	}
+	public String getAccountName() {
+		return accountName;
 	}
 	
 	public void addQsubFlag(String qsubFlag) {
