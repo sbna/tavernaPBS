@@ -910,18 +910,18 @@ public class PBS implements Serializable{
 		
 		// set destination
 		String destination = job.getDestination();
-		if (destination == null) {
-			destination = this.defaultDestination;
-		}
+		//if (destination == null) {
+		//	destination = this.defaultDestination;
+		//}
 		if (destination != null) {
 			script.append("#PBS -q " + destination + "\n");
 		}
 		
 		// set group
 		String group = job.getGroup();
-		if (group == null) {
-			group = this.defaultGroup;
-		}
+		//if (group == null) {
+		//	group = this.defaultGroup;
+		//}
 		if (group != null) {
 			script.append("#PBS -W group_list=" + group + "\n");
 		}
