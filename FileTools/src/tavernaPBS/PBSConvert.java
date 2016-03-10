@@ -5,6 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.ObjectInputStream;
+import biz.source_code.base64Coder.Base64Coder;
 
 public class PBSConvert {
 	
@@ -44,7 +45,9 @@ public class PBSConvert {
 			e.printStackTrace();
 		}
 		
-		return byter.toString();
+		// return byter.toString();
+		// return Base64.getEncoder().encodeToString(byter.toByteArray()); // java 1.8
+		return new String(Base64Coder.encode(byter.toByteArray()));
 	}
 	
 	// convert a String into a PBS object
@@ -55,10 +58,15 @@ public class PBSConvert {
 		ObjectInputStream in = null;
 		
 		try {
-			byter = new ByteArrayInputStream(pbsString.getBytes());
-			in = new ObjectInputStream(byter);
-			thing = (PBS)in.readObject();
-			in.close();
+	        byte[] data = Base64Coder.decode(pbsString);
+	        byter = new ByteArrayInputStream(data);
+	        in = new ObjectInputStream(byter);
+	        thing  = (PBS)in.readObject();
+	        in.close();
+			//byter = new ByteArrayInputStream(pbsString.getBytes());
+			//in = new ObjectInputStream(byter);
+			//thing = (PBS)in.readObject();
+			//in.close();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
