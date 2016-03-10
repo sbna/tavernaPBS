@@ -12,7 +12,9 @@ public class JobRunningTest {
 
 		PBS head = new PBS();
 
-		head.setUser("mjl3p");
+		head.setUser("");
+		head.setClusterHost("login.galileo.cineca.it");
+		head.setPassword("");
 
 		try {
 			head.startLog("jobRunTest.log");
@@ -35,6 +37,9 @@ public class JobRunningTest {
 		String command = "echo 60";
 		
 		Job job = new Job(command);
+		
+		job.setAccountName("cin_staff");
+		job.setWallTime(1);
 		
 		try {
 			in1.doJob(job);
